@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIRUDIT</title>
+    <!-- ************************************************** CSS CODE ****************************************** -->
+    <style>
+
+        body {
+            background-color: rgb(4, 18, 39);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #0e0524;
+            overflow: hidden;
+            height: 30px;
+        }
+
+        li {
+            display: inline-block;
+        }
+        a {
+        font-style:normal;
+        font-size: 26px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 16px;
+        text-align: center;
+        height: 60px;
+        text-decoration: none;
+        color: #2daeff;
+        border: 2px solid rgb(4, 18, 39); 
+        border-radius: 4px; 
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    a:hover {
+        background-color: rgba(239, 243, 28, 0.8); 
+        color: #000000; 
+    }
+
+    a:active {
+        opacity: 0.75; }
+
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+   .main {
+            width: 1535px;
+            height: 430px;
+            transition: transform 0.9s; 
+        }
+
+        .image-container::after {
+            content: "Hey, I'm Udit"; 
+            font-family: fantasy;
+            font-size:xx-large;
+            position: absolute; 
+            top: 90%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color: rgba(183, 239, 14, 0.8); 
+            color: rgb(13, 1, 1); 
+            padding: 5px 10px;
+            border-radius: 10px; 
+            pointer-events: none;
+            opacity: 0;
+        }
+        .responsive-img {
+    max-width: 100%;
+    height:auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+        .image-container:hover::after {
+         opacity: 3; 
+        }
+        .profile img{
+            width: 155px; 
+            height: 175px; 
+            display: block;
+            margin: 5px auto; 
+            margin-top: 20px; 
+            border-radius: 50%;
+            border: 4px solid rgb(240, 208, 114);
+            padding:2px;
+            
+    
+           
+        }
+        h2 {
+            font-size:larger;
+            color: rgb(5, 215, 248);
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 5px; 
+            border-bottom: 9px solid #b69bf1; 
+            width: 50%; 
+            margin: 0 auto; 
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        }
+        h3{
+            margin-inline: auto;
+             border: 2px solid #ece8e8; 
+             border-radius: 50px;
+             padding: 15px;
+             width: 200px;
+            color: aliceblue;
+            font-weight: 150px;
+            font-size: larger;
+            text-align:auto;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .proj1{
+            padding-top: 85px;
+            width: 300px; 
+            height: 300px; 
+            border-radius: 10%;
+        }
+        .proj2{
+            padding-top: 15px;
+            width: 300px; 
+            height: 300px;
+            border-radius: 10%;
+            
+        }
+        .proj2-container{
+            display: flex; 
+            justify-content:center; 
+            align-items:center; 
+            margin-top: 20px;
+            margin-bottom: 5px;
+            border-bottom: 9px solid rgb(4, 18, 39); 
+            padding-bottom: 10px;
+            width: 50%; 
+            margin: 0 auto; 
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        }
+        .proj-container {
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start; 
+            margin-top: 20px;
+            margin-bottom: 5px;
+            border-bottom: 9px solid rgb(4, 18, 39); 
+            width: 50%; 
+            margin:auto; 
+        }
+        p{
+            color: beige;
+            text-align: start;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 100px;
+            padding-right: 20;
+            padding-top: 85px;
+        }
+      h1{
+        color: #fdfdfe;
+       font-size:large;
+        text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-weight: 1400;
+           padding-right: 900;
+            margin-left: 50px; 
+      }
+      
+.gallery {
+
+  display: flex; 
+  gap: 10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img {
+  border-radius: 5px;
+  padding: 10px;;
+  width: 300px; 
+  height: 200px;
+object-fit: cover;
+}
+@media(max-width:1224px){
+    .gallery{
+        flex-direction: column;
+    }
+}
+      h4{    
+        margin-inline: auto;
+             border: 2px solid #ece8e8; 
+             border-radius: 50px;
+        border: 2px solid #ece8e8; 
+        color: #fdfdfe;
+        font-weight:bolder;
+            font-size:xx-large;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .ul
+    {
+        background-color: whitesmoke;
+        color: rgb(33, 112, 231);
+        border-color: rgb(33, 112, 231);
+        border-style: solid;
+        border-width: 2px;
+        height: 54px;
+        width: 100px;
+        font-size: 22;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.323s, color 0.323s; 
+    }
+
+    .ul:hover
+    {
+        background-color: rgb(33, 112, 231);
+        color: whitesmoke;
+        border-color: rgb(33, 112, 231);
+        border-style: solid;
+        border-width: 2px;
+        height: 54px;
+        width: 100px;
+        font-size: 22;
+        border-radius: 4px;
+        cursor: pointer; 
+    }
+    .ul:active
+    {
+        opacity: 0.75;
+        }
+    .photo img:hover {
+    opacity: 0.9; 
+    cursor: pointer; 
+    transform: scale(1.1);
+    transition: opacity 0.3s, transform 0.3s; 
+}
+      /*  ************************************************* HTML CODE **************************************** */
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#Work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+    <div class="image-container">
+        <img class="main responsive-img" src="Img1.jpg" alt="Development">
+    </div>
+    <div class="profile">
+        <img  src = "Profile.jpg" alt=" profile">
+    </div>
+   
+    <h2>I am a full-stack web developer based in Melbourne, Australia</h2>
+    <h3>HERE'S WHAT I'VE DONE SO FAR</h3>
+    <h1> WATCHDOG </h1>
+    <div class="proj-container">
+        <img class="proj1" src="proj1.jpg" alt=" project 1">
+        <p>The role of Watchdog is to enhance disaster monitoring and rescue operations by providing a comprehensive set of features and capabilities. Its primary function is to act as an advanced monitoring system that captures live video feed of the disaster location through the ESP sensor, enabling rescue teams to remotely assess the situation in real-time. This visual information helps them make informed decisions and plan their approach effectively. Additionally, Watchdog incorporates a portable button phone that serves as a communication tool between the rescue team and trapped victims. This feature allows victims to receive instructions, make customized calls, and utilize the phone's torch function when needed, providing them with a lifeline and a means to seek immediate assistance.</p>
+    </div>
+    <h1>VEHICLE ALERT SYSTEM </h1>
+    <div class="proj2-container">
+        <img class="proj2" src="proj2.jpg" alt=" project 2">
+        <p>A much needed device to prevent road accidents and an effort to make the
+             medical assistance by integrating real time location tracking and mechanisms that will help to 
+             send messages to the associated phone number on the basis of the three sensors which are flame,
+             gyro and speed sensor.These sensors are capable of sensing accurate data and detect the 
+             accidents that have occurred.This system is a reliable and a user- friendly device that can
+             be easily installed in the vehicles and can ensure data privacy as a matter of ethical concern.</p>
+    </div>
+    <h4>MY PHOTOS</h4>
+    <div class= "gallery" >
+        <div class= "column">
+            <div class= "photo">
+                <img src=" 1.png" alt = "i1">  
+                <img src=" 2.png" alt = "i2">
+                <img src=" 3.png" alt = "i3">  
+            </div>
+        </div>
+        <div class= "column">
+            <div class= "photo">
+                <img src=" 4.jpg" alt = "i4">
+                <img src="5.jpeg" alt = "i5">
+                <img src="https://source.unsplash.com/Kl1gC0ve620" alt = "i6">
+            </div>
+        </div>
+        <div class= "column">
+            <div class= "photo">
+                <img src=" https://source.unsplash.com/55btQzyDiO8" alt = "i7">
+                <img src="8.jpeg" alt = "i8">
+                <img src="https://source.unsplash.com/v1OW17UcR-Q" alt = "i9">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
